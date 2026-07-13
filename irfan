@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Water Purifier Solution</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f9fc; color: #333; text-align: center; }
+        header { background-color: #0056b3; color: white; padding: 30px 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { margin: 0; font-size: 2.5em; }
+        p.subtitle { margin: 5px 0 0 0; font-size: 1.2em; opacity: 0.9; }
+        .container { max-width: 600px; margin: 40px auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .details { text-align: left; margin: 20px 0; font-size: 1.1em; line-height: 1.8; }
+        .details strong { color: #0056b3; }
+        .btn { display: inline-block; background-color: #25D366; color: white; padding: 12px 25px; text-decoration: none; border-radius: 25px; font-weight: bold; margin-top: 20px; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3); }
+        .btn:hover { background-color: #20ba5a; }
+        footer { margin-top: 5px; color: #777; font-size: 0.9em; padding: 20px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>VIP Water Purifier Solution</h1>
+        <p class="subtitle">Professional RO Water Purifier Sales and Services</p>
+    </header>
+
+    <div class="container">
+        <h2>Our Contact Details</h2>
+        <div class="details">
+            📍 <strong>Address:</strong> Tolichowki, Hyderabad<br>
+            📞 <strong>Phone:</strong> 70952 55988 / 80746 64263<br>
+            ✉️ <strong>Email:</strong> vipwsindia@gmail.com<br>
+            💬 <strong>WhatsApp:</strong> 80746 64263
+        </div>
+        
+        <a href="https://wa.me/918074664263" class="btn" target="_blank">Chat on WhatsApp</a>
+    </div>
+
+    <footer>
+        &copy; 2026 VIP Water Purifier Solution. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

@@ -4,52 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIP Water Purifier Solution</title>
-    <!-- ఐకాన్స్ కోసం లింక్ -->
+    <!-- ఐకాన్స్ మరియు ఫాంట్స్ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f0f6fb; color: #333; text-align: center; }
-        header { background: linear-gradient(135deg, #004494, #0066cc); color: white; padding: 40px 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        h1 { margin: 0; font-size: 2.4em; letter-spacing: 1px; }
-        p.subtitle { margin: 8px 0 0 0; font-size: 1.2em; opacity: 0.9; font-weight: 300; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f8fc; color: #333; line-height: 1.6; text-align: center; }
         
-        .container { max-width: 600px; margin: 30px auto; background: white; padding: 30px; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.06); }
-        h2 { color: #004494; margin-top: 0; border-bottom: 2px solid #f0f6fb; padding-bottom: 10px; font-size: 1.5em; }
-        
-        .details { text-align: left; margin: 25px 0; font-size: 1.1em; line-height: 2.2; }
-        .details p { margin: 12px 0; display: flex; align-items: center; border-bottom: 1px solid #f7f9fb; padding-bottom: 8px; }
-        .details i { color: #0066cc; width: 30px; font-size: 1.3em; margin-right: 12px; text-align: center; }
-        .details strong { color: #444; margin-right: 5px; }
-        
-        .btn { display: block; background-color: #25D366; color: white; padding: 14px 20px; text-decoration: none; border-radius: 30px; font-weight: bold; margin-top: 20px; box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3); font-size: 1.1em; transition: 0.3s; }
-        .btn i { margin-right: 8px; font-size: 1.2em; }
-        .btn:hover { background-color: #20ba5a; transform: translateY(-2px); }
+        /* హెడర్ سٹైల్ */
+        header { background: linear-gradient(135deg, #004494, #0066cc); color: white; padding: 30px 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        header h1 { font-size: 2.2em; font-weight: 800; letter-spacing: 1px; margin-bottom: 5px; text-transform: uppercase; }
+        header p { font-size: 1.1em; opacity: 0.9; font-weight: 300; }
 
-        .btn-call { background-color: #0056b3; box-shadow: 0 5px 15px rgba(0, 86, 179, 0.3); }
-        .btn-call:hover { background-color: #004494; }
+        .container { max-width: 900px; margin: 25px auto; padding: 0 15px; }
+
+        /* మెయిన్ బ్యానర్ ఇమేజ్ */
+        .hero-section { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.06); margin-bottom: 30px; }
+        .hero-section img { width: 100%; height: auto; max-height: 300px; object-fit: cover; display: block; }
+        .hero-desc { padding: 20px; font-size: 1.2em; font-weight: 600; color: #004494; }
+
+        /* గ్యాలరీ సెక్షన్ */
+        .section-title { text-align: center; color: #004494; margin: 30px 0 20px 0; font-size: 1.6em; position: relative; padding-bottom: 8px; }
+        .section-title::after { content: ''; width: 50px; height: 3px; background-color: #0066cc; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
         
-        footer { margin-top: 40px; color: #777; font-size: 0.95em; padding: 25px; background-color: #e4edf5; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-bottom: 35px; }
+        .gallery-item { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 3px 10px rgba(0,0,0,0.05); border: 1px solid #eef2f7; }
+        .gallery-item img { width: 100%; height: 200px; object-fit: cover; display: block; }
+        .gallery-desc { padding: 12px; text-align: center; font-weight: 600; color: #444; font-size: 0.95em; border-top: 1px solid #eee; }
+
+        /* కాంటాక్ట్ కార్డ్ */
+        .contact-card { background: white; border-radius: 12px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); text-align: center; max-width: 550px; margin: 0 auto 30px auto; }
+        .contact-details { text-align: left; margin: 20px 0; font-size: 1.05em; }
+        .contact-details p { margin: 12px 0; display: flex; align-items: center; border-bottom: 1px solid #f0f4f8; padding-bottom: 8px; }
+        .contact-details i { color: #0066cc; width: 30px; font-size: 1.2em; margin-right: 10px; text-align: center; }
+        .contact-details strong { color: #333; margin-right: 8px; }
+
+        /* బటన్ స్టైల్స్ */
+        .btn { display: block; padding: 12px 20px; text-decoration: none; border-radius: 25px; font-weight: bold; font-size: 1.05em; margin-top: 15px; transition: 0.3s; text-align: center; }
+        .btn-whatsapp { background-color: #25D366; color: white; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2); }
+        .btn-whatsapp:hover { background-color: #20ba5a; }
+        .btn-call { background-color: #0056b3; color: white; box-shadow: 0 4px 12px rgba(0, 86, 179, 0.2); }
+        .btn-call:hover { background-color: #004494; }
+        .btn i { margin-right: 8px; font-size: 1.1em; }
+
+        /* ఫుటర్ */
+        footer { background-color: #00224a; color: white; text-align: center; padding: 15px; font-size: 0.9em; margin-top: 40px; }
     </style>
 </head>
 <body>
 
     <header>
         <h1>VIP WATER PURIFIER SOLUTION</h1>
-        <p class="subtitle">Pure Water, Healthy Life — Sales & Services</p>
+        <p>Pure Water, Healthy Life — Sales, Installation & Services</p>
     </header>
 
     <div class="container">
-        <h2><i class="fa-solid fa-address-card"></i> Contact Information</h2>
         
-        <div class="details">
-            <p><i class="fa-solid fa-user"></i> <span><strong>Manager:</strong> Bobby</span></p>
-            <p><i class="fa-solid fa-location-dot"></i> <span><strong>Address:</strong> Vijayawada, Andhra Pradesh</span></p>
-            <p><i class="fa-solid fa-phone"></i> <span><strong>Phone:</strong> 70952 55988 / 80746 64263</span></p>
-            <p><i class="fa-solid fa-envelope"></i> <span><strong>Email:</strong> info@vipwaterpurifier.com</span></p>
-            <p><i class="fa-brands fa-whatsapp" style="color: #25D366;"></i> <span><strong>WhatsApp:</strong> 80746 64263</span></p>
+        <!-- మెయిన్ బ్యానర్ సెక్షన్ -->
+        <div class="hero-section">
+            <img src="https://images.unsplash.com/photo-1585832770485-e68a5dbfad52?w=800&auto=format&fit=crop&q=80" alt="Water Purifier Service">
+            <div class="hero-desc">వినియోగదారుల నమ్మకమే మా బాధ్యత!</div>
         </div>
-        
-        <a href="https://wa.me/918074664263" class="btn" target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
-        <a href="tel:7095255988" class="btn btn-call"><i class="fa-solid fa-phone"></i> Call Now</a>
+
+        <!-- ప్రొడక్ట్స్ & సర్వీస్ గ్యాలరీ -->
+        <h3 class="section-title">Our Products & Services</h3>
+        <div class="gallery-grid">
+            
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1614846384571-1e31322ed3a9?w=400&auto=format&fit=crop&q=80" alt="Premium RO Machine">
+                <div class="gallery-desc">Premium RO Systems & Models</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1626242512686-bfd4b9a1a45f?w=400&auto=format&fit=crop&q=80" alt="Live Installation">
+                <div class="gallery-desc">Expert Installation & Fitting</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&auto=format&fit=crop&q=80" alt="Inside RO Filters">
+                <div class="gallery-desc">Genuine RO Filter Replacement</div>
+            </div>
+
+        </div>
+
+        <!-- కాంటాక్ట్ డీటెయిల్స్ కార్డ్ -->
+        <div class="contact-card">
+            <h3 class="section-title" style="margin-top: 0;">Contact Us</h3>
+            <div class="contact-details">
+                <p><i class="fa-solid fa-user"></i> <span><strong>Manager Name:</strong> Bobby</span></p>
+                <p><i class="fa-solid fa-location-dot"></i> <span><strong>Address:</strong> Vijayawada, Andhra Pradesh</span></p>
+                <p><i class="fa-solid fa-phone"></i> <span><strong>Phone:</strong> 70952 55988 / 80746 64263</span></p>
+                <p><i class="fa-solid fa-envelope"></i> <span><strong>Email:</strong> info@vipwaterpurifier.com</span></p>
+                <p><i class="fa-brands fa-whatsapp" style="color: #25D366;"></i> <span><strong>WhatsApp:</strong> 80746 64263</span></p>
+            </div>
+            
+            <a href="https://wa.me/918074664263" class="btn btn-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i> వాట్సాప్‌లో చాట్ చేయండి</a>
+            <a href="tel:7095255988" class="btn btn-call"><i class="fa-solid fa-phone"></i> కాల్ చేయడానికి క్లిక్ చేయండి</a>
+        </div>
+
     </div>
 
     <footer>

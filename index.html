@@ -12,29 +12,24 @@
         
         header { background: linear-gradient(135deg, #004494, #0066cc); color: white; padding: 35px 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
         header h1 { font-size: 2.2em; font-weight: 800; letter-spacing: 1px; margin-bottom: 5px; text-transform: uppercase; }
-        header p { font-size: 1.1em; opacity: 0.9; font-weight: 300; }
+        header p { font-size: 1.1em; opacity: 0.9; }
 
         .container { max-width: 1000px; margin: 25px auto; padding: 0 15px; }
-
-        .hero-section { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.06); margin-bottom: 30px; }
-        .hero-section img { width: 100%; height: auto; max-height: 320px; object-fit: cover; display: block; }
-        .hero-desc { padding: 20px; font-size: 1.2em; font-weight: 600; color: #004494; }
 
         .section-title { text-align: center; color: #004494; margin: 35px 0 25px 0; font-size: 1.7em; position: relative; padding-bottom: 8px; }
         .section-title::after { content: ''; width: 60px; height: 3px; background-color: #0066cc; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
         
-        /* 10 ఫొటోల గ్యాలరీ గ్రిడ్ */
-        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; margin-bottom: 40px; }
+        /* 10 వాటర్ ప్యూరిఫైయర్ల గ్రిడ్ */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-bottom: 40px; }
         .gallery-item { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 1px solid #eef2f7; transition: 0.3s; }
-        .gallery-item:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(0,0,0,0.1); }
-        .gallery-item img { width: 100%; height: 210px; object-fit: cover; display: block; }
-        .gallery-desc { padding: 12px; text-align: center; font-weight: 600; color: #444; font-size: 0.95em; border-top: 1px solid #eee; background-color: #fafbfc; }
+        .gallery-item:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
+        .gallery-item img { width: 100%; height: 280px; object-fit: cover; display: block; }
+        .gallery-desc { padding: 12px; text-align: center; font-weight: 600; color: #444; font-size: 0.95em; background-color: #fafbfc; border-top: 1px solid #eee; }
 
         .contact-card { background: white; border-radius: 12px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); text-align: center; max-width: 550px; margin: 0 auto 30px auto; }
         .contact-details { text-align: left; margin: 20px 0; font-size: 1.05em; }
         .contact-details p { margin: 12px 0; display: flex; align-items: center; border-bottom: 1px solid #f0f4f8; padding-bottom: 8px; }
         .contact-details i { color: #0066cc; width: 30px; font-size: 1.2em; margin-right: 10px; text-align: center; }
-        .contact-details strong { color: #333; margin-right: 8px; }
 
         .btn { display: block; padding: 14px 20px; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 1.05em; margin-top: 15px; transition: 0.3s; text-align: center; }
         .btn-whatsapp { background-color: #25D366; color: white; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2); }
@@ -55,64 +50,57 @@
 
     <div class="container">
         
-        <!-- మెయిన్ బ్యానర్ -->
-        <div class="hero-section">
-            <img src="https://images.unsplash.com/photo-1585832770485-e68a5dbfad52?w=1000&auto=format&fit=crop&q=80" alt="Water Purifier Service">
-            <div class="hero-desc">వినియోగదారుల నమ్మకమే మా బాధ్యత!</div>
-        </div>
-
-        <!-- 10 Purifier Photos Section -->
-        <h3 class="section-title">Our Best Products & Services</h3>
+        <h3 class="section-title">Our Products & Services</h3>
         <div class="gallery-grid">
             
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=400&auto=format&fit=crop&q=80" alt="Purifier 1">
-                <div class="gallery-desc">Advanced RO Purifier</div>
+                <img src="https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=500&auto=format&fit=crop&q=80" alt="VIP Purifier">
+                <div class="gallery-desc">Premium RO Water Purifier</div>
             </div>
 
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1614846384571-1e31322ed3a9?w=400&auto=format&fit=crop&q=80" alt="Purifier 2">
-                <div class="gallery-desc">Premium Alkaline Model</div>
+                <img src="https://images.unsplash.com/photo-1618506464101-7fa159fc5429?w=500&auto=format&fit=crop&q=80" alt="Omega Pro">
+                <div class="gallery-desc">Omega Pro Luxury Model</div>
             </div>
 
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1626242512686-bfd4b9a1a45f?w=400&auto=format&fit=crop&q=80" alt="Purifier 3">
-                <div class="gallery-desc">Wall Mount RO System</div>
+                <img src="https://images.unsplash.com/photo-1626242512686-bfd4b9a1a45f?w=500&auto=format&fit=crop&q=80" alt="Installation">
+                <div class="gallery-desc">RO Installation & Service</div>
             </div>
 
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&auto=format&fit=crop&q=80" alt="Purifier 4">
-                <div class="gallery-desc">Genuine Filter Service</div>
+                <img src="https://images.unsplash.com/photo-1585832770485-e68a5dbfad52?w=500&auto=format&fit=crop&q=80" alt="Genius Purifier">
+                <div class="gallery-desc">Smart Alkaline RO Filter</div>
             </div>
 
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1542013936693-8848e57423e3?w=400&auto=format&fit=crop&q=80" alt="Purifier 5">
-                <div class="gallery-desc">Compact Kitchen RO</div>
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=500&auto=format&fit=crop&q=80" alt="AMP Neon">
+                <div class="gallery-desc">Advanced Copper RO System</div>
             </div>
 
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400&auto=format&fit=crop&q=80" alt="Purifier 6">
-                <div class="gallery-desc">RO Spares & Spindle</div>
+                <img src="https://images.unsplash.com/photo-1542013936693-8848e57423e3?w=500&auto=format&fit=crop&q=80" alt="Aquafresh">
+                <div class="gallery-desc">Aquafresh Mineral Dispenser</div>
             </div>
 
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1527066579998-dbbae57f45ce?w=400&auto=format&fit=crop&q=80" alt="Purifier 7">
-                <div class="gallery-desc">Mineral Booster RO</div>
+                <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=500&auto=format&fit=crop&q=80" alt="Dolphin Blue">
+                <div class="gallery-desc">Dolphin Model Under-Sink RO</div>
             </div>
 
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=400&auto=format&fit=crop&q=80" alt="Purifier 8">
-                <div class="gallery-desc">Under Sink RO System</div>
+                <img src="https://images.unsplash.com/photo-1527066579998-dbbae57f45ce?w=500&auto=format&fit=crop&q=80" alt="Water Softener">
+                <div class="gallery-desc">Whole House Water Softener</div>
             </div>
 
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1508962914676-134849a727f0?w=400&auto=format&fit=crop&q=80" alt="Purifier 9">
-                <div class="gallery-desc">Commercial Water Filter</div>
+                <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=500&auto=format&fit=crop&q=80" alt="Native Premium">
+                <div class="gallery-desc">Modern Matte Black Purifier</div>
             </div>
 
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1588854337236-6889d631faa8?w=400&auto=format&fit=crop&q=80" alt="Purifier 10">
-                <div class="gallery-desc">UV + UF Technology RO</div>
+                <img src="https://images.unsplash.com/photo-1508962914676-134849a727f0?w=500&auto=format&fit=crop&q=80" alt="Spare Parts">
+                <div class="gallery-desc">RO Filter Spares & Maintenance</div>
             </div>
 
         </div>
@@ -125,7 +113,6 @@
                 <p><i class="fa-solid fa-location-dot"></i> <span><strong>Address:</strong> Vijayawada, Andhra Pradesh</span></p>
                 <p><i class="fa-solid fa-phone"></i> <span><strong>Phone:</strong> 70952 55988 / 80746 64263</span></p>
                 <p><i class="fa-solid fa-envelope"></i> <span><strong>Email:</strong> info@vipwaterpurifier.com</span></p>
-                <p><i class="fa-brands fa-whatsapp" style="color: #25D366;"></i> <span><strong>WhatsApp:</strong> 80746 64263</span></p>
             </div>
             
             <a href="https://wa.me/918074664263" class="btn btn-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i> వాట్సాప్‌లో చాట్ చేయండి</a>
